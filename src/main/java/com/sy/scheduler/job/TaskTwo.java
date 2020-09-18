@@ -8,7 +8,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 /**
  * @author sy
  * @date: 2020/8/15 14:42
- * @description
+ * @description 创建第二个定时任务
  */
 public class TaskTwo extends QuartzJobBean {
 

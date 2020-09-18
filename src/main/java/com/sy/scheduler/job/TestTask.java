@@ -10,7 +10,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 /**
  * @author sy
  * @date: 2020/8/14 18:11
- * @description 测试
+ * @description 创建一个定时任务。
  */
 @Slf4j
 public class TestTask   extends QuartzJobBean {

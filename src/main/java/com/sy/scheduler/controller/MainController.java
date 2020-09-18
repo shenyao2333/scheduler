@@ -20,15 +20,25 @@ public class MainController {
     @Resource
     private QuartzService quartzService;
 
+
+    /**
+     * 立即执行
+     */
     @GetMapping("/test1")
     public void test(){
         quartzService.runAJobNow("job","Job");
     }
 
+    /**
+     *
+     * @param name
+     */
     @GetMapping("/test2")
     public void test2(String name){
-        quartzService.runAJobNow(name,"Test");
+        quartzService.pauseJob(name,"Test");
     }
+
+
 
     @GetMapping("/add")
     public void add(){
